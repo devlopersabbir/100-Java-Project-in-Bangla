@@ -3,8 +3,8 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 class GenerateString {
-    static String password = "2022";
-    static int length = 4;
+    static String password = "22";
+    static int length = 2;
     static int wait = 50;
 
     public static void main(String[] args) {
@@ -17,17 +17,13 @@ class GenerateString {
         public void run() {
             String generatedPass = generatorLoop(length);
 
-            if (generatedPass == password) {
-                System.out.format("Password matched! %s == %s \n", password, generatedPass);
+            if (generatedPass.equals(password)) {
+                System.out.format("Password matched! -> %s == %s \n", password, generatedPass);
                 System.exit(0);
             } else {
                 System.out.format("Trying running -> %s != %s \n", password, generatedPass);
             }
         }
-    }
-
-    static void generator(int numberOfTimes, int length, String password) {
-
     }
 
     // running loop
