@@ -4,6 +4,7 @@ public class IntegerGenerator {
     public static void main(String[] args) {
         Random random = new Random();
 
-        System.out.println(random.nextInt(10));
+        String alpha = "12345";
+        System.out.println(alpha.charAt(random.nextInt(alpha.length())));
     }
 }
