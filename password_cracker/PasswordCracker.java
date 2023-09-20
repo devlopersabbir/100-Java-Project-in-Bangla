@@ -28,7 +28,7 @@ class PasswordCracker {
                 System.out.format("Password matched! -> %s == %s \n", password, generatedPass);
                 System.exit(0);
             } else {
-                System.out.format("Trying running -> %s != %s \n", password, generatedPass);
+                System.out.format("Try running -> %s != %s \n", password, generatedPass);
             }
         }
     }
