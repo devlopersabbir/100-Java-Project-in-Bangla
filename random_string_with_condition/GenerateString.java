@@ -1,11 +1,17 @@
 import java.util.Random;
 import java.util.Timer;
 import java.util.TimerTask;
+import java.util.HashSet;
 
 class GenerateString {
     static String password = "22";
     static int length = 2;
     static int wait = 50;
+    static HashSet<String> generatedStrings = new HashSet<String>();
+
+    static String spacialChar = "~!@#$%^&*()_-+=\\|]}{[?/><";
+    static String alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    static String numbers = "1234567890";
 
     public static void main(String[] args) {
         Timer timer = new Timer();
@@ -28,10 +34,6 @@ class GenerateString {
 
     // running loop
     static String generatorLoop(int length) {
-        final String numbers = "1234567890";
-        // String spacialChar = "~!@#$%^&*()_-+=\\|]}{[?/><";
-        // final String alphabet =
-        // "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
         // make a single string using concat
         String allCharacters = numbers;
 
@@ -40,13 +42,21 @@ class GenerateString {
 
         // Create a StringBuilder to build the random string
         StringBuilder randomString = new StringBuilder();
-        // Generate the random string
-        for (int i = 0; i < length; i++) {
-            int randomIndex = random.nextInt(allCharacters.length());
-            char randomChar = allCharacters.charAt(randomIndex);
-            randomString.append(randomChar);
-        }
 
-        return randomString.toString();
+        // generated string state
+        String generated;
+        do {
+            randomString.setLength(0); // clear string builder
+
+            for (int i = 0; i < length; i++) {
+                int randomIndex = random.nextInt(allCharacters.length());
+                char randomChar = allCharacters.charAt(randomIndex);
+                randomString.append(randomChar);
+            }
+            generated = randomString.toString();
+        } while (generatedStrings.contains(generated));
+
+        generatedStrings.add(generated);
+        return generated;
     }
 }
