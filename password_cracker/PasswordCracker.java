@@ -3,7 +3,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 import java.util.HashSet;
 
-class GenerateString {
+class PasswordCracker {
     static String password = "22";
     static int length = 2;
     static int wait = 50;

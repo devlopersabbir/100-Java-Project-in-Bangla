@@ -1,6 +1,9 @@
 # 100+ Java Project In Bangla
 
-## [Password Cracker 001](./password-cracker-001/Main.java)
+In ths repository you will learn java basic to advance
 
+## Random Generator
 
-- Bank Management Java Application
+- Simple random integer generator
+  - [IntegerGenerator](./random_number_generator_001/IntegerGenerator.java)
+-
