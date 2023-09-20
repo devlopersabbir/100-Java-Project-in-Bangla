@@ -4,14 +4,15 @@ import java.util.TimerTask;
 import java.util.HashSet;
 
 class PasswordCracker {
-    static String password = "22";
-    static int length = 2;
+    static String password = "robi";
+    static int length = 4;
     static int wait = 50;
     static HashSet<String> generatedStrings = new HashSet<String>();
 
-    static String spacialChar = "~!@#$%^&*()_-+=\\|]}{[?/><";
-    static String alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    static String numbers = "1234567890";
+    // static String spacialChar = "~!@#$%^&*()_-+=\\|]}{[?/><";
+    static String alphabetS = "abcdefghijklmnopqrstuvwxyz";
+    static String alphabetU = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    // static String numbers = "1234567890";
 
     public static void main(String[] args) {
         Timer timer = new Timer();
@@ -35,7 +36,7 @@ class PasswordCracker {
     // running loop
     static String generatorLoop(int length) {
         // make a single string using concat
-        String allCharacters = numbers;
+        String allCharacters = alphabetS;
 
         // creating an object of random class
         Random random = new Random();
