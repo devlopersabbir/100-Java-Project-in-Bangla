@@ -42,7 +42,7 @@ class Main implements ActionListener {
 
     public void countAmount(int count) {
         label.setText(String.valueOf(count));
-        label.setBounds(160, 220, 150, 100);
+        label.setBounds(180, 220, 150, 100);
         label.setForeground(Color.white);
         label.setAlignmentX(Component.CENTER_ALIGNMENT);
         label.setFont(new Font("poppins", Font.BOLD, 50));
@@ -61,9 +61,9 @@ class Main implements ActionListener {
     public void decrement() {
         JButton decButton = new JButton();
         decButton.setText(" + ");
-        decButton.setBounds(160, 340, 50, 50);
+        decButton.setBounds(220, 340, 50, 50);
         decButton.setFont(font);
-        decButton.setBackground(Color.orange);
+        decButton.setBackground(Color.BLUE);
         panel.add(decButton);
     }
 
