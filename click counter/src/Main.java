@@ -66,7 +66,7 @@ class Main implements ActionListener {
         incButton.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                countAmount(count += 1);
+                countAmount(count -= 1);
             }
         });
     }
@@ -82,7 +82,7 @@ class Main implements ActionListener {
         decButton.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                countAmount(count -= 1);
+                countAmount(count += 1);
             }
         });
     }
