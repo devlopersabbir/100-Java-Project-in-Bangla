@@ -19,7 +19,7 @@ class Main implements ActionListener {
         panel.setLayout(null);
 
         // output
-        countAmount(count);
+
         increment();
         decrement();
 
@@ -37,7 +37,7 @@ class Main implements ActionListener {
     }
 
     public void actionPerformed(ActionEvent e) {
-        System.out.println(e);
+        System.out.println("evetn from perform: " + e);
     }
 
     public void countAmount(int count) {
@@ -56,6 +56,13 @@ class Main implements ActionListener {
         incButton.setFont(font);
         incButton.setBackground(Color.orange);
         panel.add(incButton);
+
+        incButton.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                countAmount(count += 1);
+            }
+        });
     }
 
     public void decrement() {
@@ -65,6 +72,13 @@ class Main implements ActionListener {
         decButton.setFont(font);
         decButton.setBackground(Color.BLUE);
         panel.add(decButton);
+
+        decButton.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                countAmount(count -= 1);
+            }
+        });
     }
 
 }
