@@ -22,6 +22,7 @@ class Main implements ActionListener {
 
         increment();
         decrement();
+        countAmount(0);
 
         frame.setSize(420, 720);
         frame.setTitle("Simple java application");
@@ -41,7 +42,12 @@ class Main implements ActionListener {
     }
 
     public void countAmount(int count) {
-        label.setText(String.valueOf(count));
+        if (count == 0) {
+            label.setText("0");
+        } else {
+            label.setText(String.valueOf(count));
+        }
+
         label.setBounds(180, 220, 150, 100);
         label.setForeground(Color.white);
         label.setAlignmentX(Component.CENTER_ALIGNMENT);
