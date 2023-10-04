@@ -9,10 +9,10 @@ In ths repository you will learn java basic to advance with 100+ project video
 ## Random Generator
 
 - Password Cracker
-  - Java Timer / TimerTask **002**
+  - Java Timer / TimerTask **#002**
     - [YouTube Video Link](https://www.youtube.com/watch?v=_ncqRaksVQ8&list=PLdcGGiDG9Q0gY5GhEAW6UhacsVhVWPlt1&index=2)
     - [Source code link](./java_setinterval_001)
-  - Java Random (Number, Alphabet, Spacial Char) **003**
+  - Java Random (Number, Alphabet, Spacial Char) **#003**
     - [YouTube Video Link](https://youtu.be/ORNvuNk32cg?list=PLdcGGiDG9Q0gY5GhEAW6UhacsVhVWPlt1)
     - [Source code link](./random_number_generator_002)
   - Full Functionality Password Attacker
