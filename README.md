@@ -19,6 +19,6 @@ In ths repository you will learn java basic to advance with 100+ project video
     - [YouTube Video Link](https://youtube.com/c/stsabbir)
     - [Source code link](./password_cracker)
 - Console Applications
-  - Java Scanner
+  - Java Scanner **005**
     - [YouTube Video Link](https://youtu.be/u16c2h2eNv0)
     - [Source code link](./Java%20Scanner%20Package/)
