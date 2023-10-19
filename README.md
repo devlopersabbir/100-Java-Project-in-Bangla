@@ -17,4 +17,8 @@ In ths repository you will learn java basic to advance with 100+ project video
     - [Source code link](./random_number_generator_002)
   - Full Functionality Password Attacker
     - [YouTube Video Link](https://youtube.com/c/stsabbir)
-    - [Source code link](./password_cracker) 
+    - [Source code link](./password_cracker)
+- Console Applications
+  - Java Scanner
+    - [YouTube Video Link](https://youtu.be/u16c2h2eNv0)
+    - [Source code link](./Java%20Scanner%20Package/)
